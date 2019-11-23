@@ -1,4 +1,4 @@
-A list of reverse shells for linux and windows
+###### A list of reverse shells for linux and windows
 
 Bash reverse shell
 A bash reverse shell one-liner command using custom file descriptor is as follows (it won't be a tty):

